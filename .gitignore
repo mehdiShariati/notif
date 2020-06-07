@@ -1,0 +1,8 @@
+\.ac-php-conf\.json
+vendor/
+composer.lock
+resources/cache
+.idea
+.env
+.DS_Store
+
