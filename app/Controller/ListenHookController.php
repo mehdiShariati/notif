@@ -7,6 +7,7 @@ class ListenHookController extends _Controller
 {
     public function index(Request $request, Response $response, array $args = []):Response
     {
+        Telegram::instantiateTelegram()->send(file_get_contents("php://input"));
         $data=json_decode(file_get_contents("php://input"),true);
         $notif=[
             "type"=>$data["event_type"],
